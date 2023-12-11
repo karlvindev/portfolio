@@ -625,17 +625,11 @@ svg{
     row-gap: 1rem;
   }
 
-  .services__card{
-    padding-block: 1.5rem;
-  }
-}
-
 /* For medium devices */
 @media screen and (min-width: 576px){
   .home__container,
   .about__container,
   .skills__container,
-  .services__container,
   .projects__container,
   .contact__container{
     grid-template-columns: 360px;
@@ -675,7 +669,6 @@ svg{
     order: 1;
   }
 
-  .services__container,
   .projects__container{
     grid-template-columns: repeat(2, 352px);
   }
@@ -776,15 +769,6 @@ svg{
 
   .skills__item{
     font-size: var(--h3-font-size);
-  }
-
-  .services__container{
-    grid-template-columns: repeat(3, 352px);
-    padding-block: 2.5rem 4rem;
-  }
-
-  .services__card{
-    padding: 3.5rem 2rem;
   }
 
   .projects__container{
