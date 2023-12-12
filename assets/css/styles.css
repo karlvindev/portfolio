@@ -405,6 +405,37 @@ svg{
   color: var(--first-color);
 }
 
+/*=============== SERVICES ===============*/
+.services__container{
+  row-gap: 2rem;
+  padding-block: 1rem;
+}
+
+.services__card{
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 3rem 1.25rem;
+  border-radius: 1rem;
+  border: 2px solid var(--container-color);
+  transition: border .4s;
+}
+
+.services__icon{
+  display: block;
+  font-size: 4rem;
+  color: var(--first-color);
+  margin-bottom: .75rem;
+}
+
+.services__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.services__card:hover{
+  border: 2px solid var(--first-color);
+}
+
 /*=============== PROJECTS ===============*/
 .projects{
   background-color: var(--container-color);
@@ -625,11 +656,17 @@ svg{
     row-gap: 1rem;
   }
 
+  .services__card{
+    padding-block: 1.5rem;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 576px){
   .home__container,
   .about__container,
   .skills__container,
+  .services__container,
   .projects__container,
   .contact__container{
     grid-template-columns: 360px;
@@ -669,6 +706,7 @@ svg{
     order: 1;
   }
 
+  .services__container,
   .projects__container{
     grid-template-columns: repeat(2, 352px);
   }
@@ -769,6 +807,15 @@ svg{
 
   .skills__item{
     font-size: var(--h3-font-size);
+  }
+
+  .services__container{
+    grid-template-columns: repeat(3, 352px);
+    padding-block: 2.5rem 4rem;
+  }
+
+  .services__card{
+    padding: 3.5rem 2rem;
   }
 
   .projects__container{
